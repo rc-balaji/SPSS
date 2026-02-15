@@ -1,0 +1,119 @@
+To fulfill the request exactly as shown in your lab images for **Exercise No: 1 - Descriptive Statistics**, I have generated the data in a CSV format and provided the step-by-step procedure following your handwritten algorithm.
+
+### 1. The CSV Data (Descriptive Statistics)
+
+Copy this data into a text file and save it as `Exercise1_Data.csv`. This contains all **60 Age samples** from your image, with the **first 40 assigned as Male (1)** and the **remaining 20 as Female (2)**.
+
+```csv
+Age,Gender
+35,1
+44,1
+56,1
+83,1
+46,1
+20,1
+32,1
+19,1
+50,1
+39,1
+33,1
+37,1
+42,1
+40,1
+20,1
+25,1
+34,1
+52,1
+27,1
+18,1
+40,1
+23,1
+17,1
+41,1
+22,1
+45,1
+21,1
+34,1
+49,1
+27,1
+60,1
+46,1
+32,1
+58,1
+23,1
+52,1
+24,1
+64,1
+41,1
+47,1
+54,2
+37,2
+40,2
+41,2
+40,2
+36,2
+46,2
+29,2
+34,2
+39,2
+39,2
+40,2
+37,2
+50,2
+41,2
+34,2
+47,2
+34,2
+45,2
+36,2
+
+```
+
+---
+
+### 2. Step-by-Step Procedure (Algorithm)
+
+Follow these exact steps from your lab notes to complete the analysis:
+
+* **Step 1: Define Variables**
+* Open SPSS and go to **Variable View**.
+* Define `Age` and `Gender` (Numeric).
+* In the **Values** column for Gender, set `1 = Male` and `2 = Female`.
+
+
+* **Step 2: Enter Data**
+* Switch to **Data View** and enter the data provided above.
+
+
+* **Step 3: Assign Gender**
+* Ensure the first 40 rows are marked `1` and the last 20 rows are marked `2`.
+
+
+* **Step 4: Generate Histogram with Normal Curve**
+* Go to **Analyze** > **Descriptive Statistics** > **Frequencies**.
+* Move `Age` to the variable box.
+* Click **Charts**, select **Histograms**, and check **Show normal curve on histogram**.
+
+
+* **Step 5: Separate Histograms by Gender**
+* Go to **Graphs** > **Legacy Dialogs** > **Histogram**.
+* Select `Age` for the variable and use `Gender` as a filter/row to generate separate charts.
+
+
+* **Step 6 & 7: Statistical Explore**
+* Go to **Analyze** > **Descriptive Statistics** > **Explore**.
+* Move `Age` to the **Dependent List** and `Gender` to the **Factor List**.
+* Click **OK** to generate the Mean, S.D, Median, Minimum, Maximum, and Range.
+
+
+
+### 3. Displaying Results
+
+* **Pie Chart:** To display gender with percentages as requested in Question 6:
+* Go to **Graphs** > **Legacy Dialogs** > **Pie**.
+* Select **Summaries for groups of cases** and move `Gender` to the "Define Slices by" box.
+
+
+* **Output Table:** The "Explore" command will generate the full descriptive table needed for your report.
+
+Would you like me to move on and generate the final summary table for Exercise No. 2 (One-Sample T-Test)?

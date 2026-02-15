@@ -1,0 +1,68 @@
+To help you finish your lab workbook, here is the data generation and the exact step-by-step guide for **Exercise No: 10 (Kruskal-Wallis Test)** as it usually follows the sequence of your previous images.
+
+### 1. The CSV Data (Kruskal-Wallis Test)
+
+Since this is a non-parametric version of ANOVA, you need one column for the **Score** and one column for the **Group**. Save this as `kruskal_wallis_test.csv`.
+
+```csv
+Score,Group
+15,1
+18,1
+12,1
+10,1
+14,1
+25,2
+22,2
+28,2
+24,2
+26,2
+8,3
+7,3
+11,3
+9,3
+10,3
+
+```
+
+---
+
+### 2. SPSS Procedure (Follow Exactly)
+
+Based on standard lab manual procedures for this test:
+
+#### Step A: Variable Setup
+
+1. **Open SPSS** and go to **Variable View**.
+2. Define `Score` as **Numeric** (Scale).
+3. Define `Group` as **Numeric** (Nominal).
+4. Under **Values** for Group, set: `1 = Group A`, `2 = Group B`, `3 = Group C`.
+
+#### Step B: Run the Kruskal-Wallis Test
+
+1. Go to **Analyze** > **Nonparametric Tests** > **Legacy Dialogs** > **K Independent Samples...**.
+2. Move `Score` into the **Test Variable List**.
+3. Move `Group` into the **Grouping Variable** box.
+4. Click **Define Range** and set Minimum to `1` and Maximum to `3`. Click **Continue**.
+5. Ensure **Kruskal-Wallis H** is checked.
+6. Click **OK**.
+
+---
+
+### 3. Final Summary of Your Lab Work (Ex 1 - 10)
+
+Since you have now covered all the major exercises in your images, here is the checklist for your final submission:
+
+| Ex No. | Test Type | Purpose |
+| --- | --- | --- |
+| **1** | **Descriptive Statistics** | Mean, Median, SD, and Histograms for Age/Gender. |
+| **2** | **One-Sample T-Test** | Testing if tires meet the 36km average. |
+| **3** | **Independent T-Test** | Comparing mobile usage between Males and Females. |
+| **4** | **Paired T-Test** | Weight before vs. after a program. |
+| **5** | **One-Way ANOVA** | Comparing marks across 3 different drug treatments. |
+| **6** | **Two-Way ANOVA** | Defects based on Workman and Machine type. |
+| **7** | **Chi-Square Test** | Association between Experience and Info Source. |
+| **8** | **Correlation & Regression** | Relationship between Sales Price and Assessed Value. |
+| **9** | **Multiple Regression** | Predicting Recovery Time using Dose and BP. |
+| **10** | **Kruskal-Wallis** | Non-parametric comparison of 3+ groups. |
+
+**Would you like me to help you write the formal "Inference" for any of these specific exercises to finalize your lab record?**

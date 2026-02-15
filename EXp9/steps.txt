@@ -1,0 +1,65 @@
+To complete **Exercise No: 9 (Multiple Regression Analysis)** based on your lab manual, you need to use three variables instead of two. While the title says "Multiple Regression," your algorithm specifically mentions adding **Dose**, **Blood Pressure**, and **Recovery Time**.
+
+### 1. The Multiple Regression CSV Data
+
+Copy this data and save it as `multiple_regression.csv`. Since the image doesn't show a specific table for these new variables, I have provided a standard sample set that will work perfectly with your lab's instructions for Dose, Blood Pressure, and Recovery Time.
+
+```csv
+Dose,Blood_Pressure,Recovery_Time
+2.0,140,15
+2.5,145,14
+3.0,138,12
+3.5,130,10
+4.0,128,9
+4.5,125,8
+5.0,120,7
+2.2,142,15
+2.8,135,11
+3.2,132,10
+
+```
+
+---
+
+### 2. SPSS Procedure (Follow Exactly)
+
+Based on your lab manual's "Procedure", follow these exact steps:
+
+#### Step A: Variable Setup
+
+1. **Open SPSS** and go to **Variable View**.
+2. Enter the names: `Dose`, `Blood_Pressure`, and `Recovery_Time`.
+3. Set all types to **Numeric**.
+
+#### Step B: Run the Multiple Regression
+
+1. Go to **Analyze** > **Regression** > **Linear...**.
+2. **Define Variables:**
+* Move `Recovery_Time` into the **Dependent** box.
+* Move `Dose` and `Blood_Pressure` into the **Independent(s)** box.
+
+
+3. Click **OK**.
+
+#### Step C: Generate the Scatter Plot
+
+1. Go to **Graphs** > **Legacy Dialogs** > **Scatter/Dot...**.
+2. Choose **Simple Scatter** and click **Define**.
+3. Fill the **X-Axis** (e.g., Dose) and **Y-Axis** (e.g., Recovery Time).
+4. Click **OK**.
+
+---
+
+### 3. Understanding Your Result
+
+After running these steps, check your output window:
+
+* **Model Summary:** Look for  and . This tells you how strongly Dose and Blood Pressure together influence Recovery Time.
+* **ANOVA Table:** If the **Sig.** value is **< 0.05**, your multiple regression model is a significant predictor of recovery.
+* **Coefficients:** This gives you the equation:
+
+
+
+**Final Result for Lab:** "The multiple regressions have been computed successfully".
+
+**Would you like me to generate a summary table format for your final lab report based on this data?**
