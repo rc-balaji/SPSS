@@ -1,0 +1,58 @@
+To perform a **One-Way ANOVA** in SPSS, you need to organize your data into two columns: one for the **Marks** (Dependent Variable) and one for the **Drug_Type** (Factor/Independent Variable).
+
+### 1. The CSV Data
+
+Copy the content below and save it as `anova_marks_test.csv`. I have coded the treatments as numbers: `1 = Memory Drug`, `2 = Placebo`, and `3 = No Treatment`.
+
+```csv
+Marks,Drug_Type
+70,1
+77,1
+83,1
+90,1
+97,1
+37,2
+43,2
+50,2
+57,2
+63,2
+3,3
+10,3
+17,3
+33,3
+30,3
+
+```
+
+---
+
+### 2. How to Set This Up in SPSS
+
+1. **Import the CSV:** Go to **File > Import Data > CSV** and select your file.
+2. **Define Variable Values:**
+* Go to **Variable View**.
+* Click on the **Values** cell for `Drug_Type`.
+* Add: `1` = `Memory Drug`, `2` = `Placebo`, `3` = `No Treatment`.
+
+
+3. **Run the ANOVA:**
+* Go to **Analyze > Compare Means > One-Way ANOVA**.
+* Move `Marks` into the **Dependent List**.
+* Move `Drug_Type` into the **Factor** box.
+* Click **Post Hoc** and select **Tukey** (to see exactly which groups differ if the result is significant).
+* Click **Continue** and then **OK**.
+
+
+
+---
+
+### 3. What Your Results Mean
+
+Focus on the **ANOVA table** and the column labeled **Sig.** (the p-value):
+
+* **If Sig. < 0.05:** There is a **significant difference** in marks based on the drug treatment. You should then look at the "Post Hoc" table to see which specific drug performed better.
+* **If Sig. > 0.05:** There is no significant difference between the treatments.
+
+Looking at your handwritten data, the Memory Drug group (70-97) scores much higher than the No Treatment group (3-33), so you should expect a very high significance (low p-value).
+
+Would you like me to help you interpret the **Tukey Post Hoc** table once you've generated the output?

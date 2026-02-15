@@ -1,0 +1,148 @@
+To perform the **Correlation and Regression Analysis** exactly as shown in your final lab manual images (Exercise No: 8), you need to organize your data into two numeric columns: `Sales_Price` and `Assessed_Value`.
+
+### 1. The CSV Data (Correlation and Regression)
+
+Copy this data and save it as `real_estate_analysis.csv`. I have transcribed the 20 properties provided in your table (Property 1–10 and 11–20). Both variables are measured in thousands of dollars.
+
+```csv
+Property,Sales_Price,Assessed_Value
+1,167.9,152.7
+2,168.0,163.8
+3,155.0,167.6
+4,158.5,127.3
+5,159.9,155.7
+6,162.0,169.0
+7,165.0,189.1
+8,174.5,153.6
+9,175.0,167.1
+10,159.0,148.9
+11,230.0,225.4
+12,230.0,170.4
+13,222.5,200.4
+14,222.5,209.6
+15,220.0,205.2
+16,216.0,220.9
+17,215.0,194.9
+18,228.0,231.9
+19,209.0,224.2
+20,267.0,235.1
+
+```
+
+---
+
+### 2. SPSS Procedure (Follow Exactly)
+
+As per your lab manual’s "Algorithm", here are the specific steps to carry out the analysis:
+
+#### Step A: Variable Setup
+
+1. **Open SPSS** and start a new data window.
+2. In **Variable View**, enter the names `Sales_Price` and `Assessed_Value`.
+3. Ensure the **Type** is set to `Numeric` for both.
+
+#### Step B: Data Entry
+
+1. Switch to **Data View** and enter the 20 rows of data provided in the CSV above.
+
+#### Step C: Correlation Analysis
+
+To find the relationship between the two variables:
+
+1. Go to **Analyze** > **Correlate** > **Bivariate**.
+2. Move both `Sales_Price` and `Assessed_Value` into the **Variables** box.
+3. Ensure **Pearson** is checked and click **OK**.
+
+#### Step D: Regression Analysis (Optional Visualization)
+
+Your manual also suggests visualizing data:
+
+1. Go to **Analyze** > **Descriptive Statistics** > **Frequencies**.
+2. Click **Charts**, select **Histograms**, and press **OK**.
+
+---
+
+### 3. Understanding the Inference
+
+Look at the **Correlations** table in your output:
+
+* **Hypothesis ():** There is no significant relationship between sales price and assessed value.
+* **Hypothesis ():** There is a significant relationship between sales price and assessed value.
+* **The Result:** Look at the **Pearson Correlation** coefficient () and the **Sig. (2-tailed)** value.
+* If **Sig. < 0.05**, you reject  and conclude there is a significant relationship.
+
+
+
+**Would you like me to explain how to calculate the Regression equation () if your lab requires the "Regression" part of the title as well?**
+
+
+
+
+To perform the **Linear Regression** analysis for Exercise No: 8 using the same real estate data, you will determine if the `Assessed_Value` can predict the `Sales_Price`.
+
+### 1. The Regression Data (Same as Before)
+
+Ensure your data is entered in two columns in SPSS: `Sales_Price` and `Assessed_Value`.
+
+```csv
+Sales_Price,Assessed_Value
+167.9,152.7
+168.0,163.8
+155.0,167.6
+158.5,127.3
+159.9,155.7
+162.0,169.0
+165.0,189.1
+174.5,153.6
+175.0,167.1
+159.0,148.9
+230.0,225.4
+230.0,170.4
+222.5,200.4
+222.5,209.6
+220.0,205.2
+216.0,220.9
+215.0,194.9
+228.0,231.9
+209.0,224.2
+267.0,235.1
+
+```
+
+---
+
+### 2. SPSS Regression Procedure
+
+Follow these steps to generate the Regression output:
+
+1. **Go to Analyze:** Select **Regression** > **Linear...**.
+2. **Set Variables:**
+* Move `Sales_Price` into the **Dependent** box (this is what you want to predict).
+* Move `Assessed_Value` into the **Independent(s)** box.
+
+
+3. **Statistics:** Click the **Statistics** button and ensure **Estimates** and **Model fit** are checked.
+4. **Click OK.**
+
+---
+
+### 3. Interpreting Your Regression Output
+
+You will get three key tables in your output:
+
+* **Model Summary ():** Look at the **R Square** value. This tells you what percentage of the variation in Sales Price is explained by the Assessed Value. For example, an  of  means  of the price is explained by the assessment.
+* **ANOVA Table (Significance):** Look at the **Sig.** value. If it is **less than 0.05**, your regression model is statistically significant, meaning the Assessed Value is a reliable predictor of the Sales Price.
+* **Coefficients Table (The Equation):** This allows you to write your final result as a mathematical formula:
+* **Constant (B):** This is your intercept ().
+* **Assessed_Value (B):** This is your slope ().
+* **The Result:** Your equation will look like: .
+
+
+
+### 4. Final Result Sentence for Your Lab
+
+Based on the output, you can conclude:
+
+> "The linear regression analysis shows that Assessed Value significantly predicts Sales Price (). The model explains [ value]% of the variance in property sales prices".
+
+Would you like me to help you create a **Scatter Plot with a Regression Line** to visually show this relationship in your report?

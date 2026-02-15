@@ -1,0 +1,51 @@
+To perform a **Paired Samples T-Test** in SPSS, you need two distinct columns: one for the "Before" measurements and one for the "After" measurements. This allows SPSS to compare the change within each specific participant.
+
+### The Paired Samples CSV Data
+
+Copy the block below and save it as `weight_program_test.csv`. I have paired each "Before" weight with its corresponding "After" weight from your handwritten table:
+
+```csv
+Weight_Before,Weight_After
+189,170
+202,179
+220,203
+207,192
+197,172
+177,161
+193,174
+202,187
+208,186
+233,204
+
+```
+
+---
+
+### How to Run the Paired Samples T-Test in SPSS
+
+1. **Import the CSV:** Go to **File > Import Data > CSV** and select your file.
+2. **Define the Variables:** Switch to **Variable View** and ensure both `Weight_Before` and `Weight_After` are set to **Measure: Scale**.
+3. **Run the Analysis:**
+* Go to **Analyze > Compare Means > Paired-Samples T-Test**.
+* Select both `Weight_Before` and `Weight_After` together.
+* Click the arrow button to move them into the **Paired Variables** list as a single pair (Variable1: `Weight_Before`, Variable2: `Weight_After`).
+* Click **OK**.
+
+
+
+---
+
+### What to Look for in Your Results
+
+When the output window opens, focus on the **Paired Samples Test** table:
+
+* **Mean Difference:** This shows the average weight loss (Before - After).
+* **Sig. (2-tailed):** This is your p-value.
+* **If p < 0.05:** The weight-reducing program has a **significant impact**. You can conclude the program works.
+* **If p > 0.05:** There is no significant difference, meaning the program might not be effective.
+
+
+
+Looking at your data, there is a clear drop in every single participant's weight, so you should expect a very low p-value (likely **p < 0.001**), showing the program is highly effective.
+
+Would you like me to help you draft the final **"Result"** section for this specific exercise once you have the SPSS output?

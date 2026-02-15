@@ -1,0 +1,67 @@
+To perform this **Independent Samples T-Test**, you need two columns in your CSV: one for the **Monthly_Minutes** and one for **Gender** (coded as numbers, where 1 = Male and 2 = Female).
+
+### The Independent Samples CSV Data
+
+Copy the block below and save it as `cell_phone_usage.csv`. I have paired the minutes with the corresponding gender from your handwritten list:
+
+```csv
+Monthly_Minutes,Gender
+904,1
+801,1
+899,2
+398,2
+625,2
+480,1
+617,2
+817,2
+560,1
+685,1
+821,2
+797,2
+412,1
+601,1
+568,2
+565,1
+613,1
+485,2
+390,1
+617,1
+690,2
+309,2
+315,1
+553,2
+398,2
+
+```
+
+---
+
+### How to Run the Independent Samples T-Test in SPSS
+
+1. **Import the CSV:** Go to **File > Import Data > CSV** and select the file you just created.
+2. **Define Variables:** In the **Variable View** tab, set **Values** for `Gender`: `1 = Male` and `2 = Female`.
+3. **Run the Analysis:**
+* Go to **Analyze > Compare Means > Independent-Samples T-Test**.
+* Move `Monthly_Minutes` into the **Test Variable(s)** box.
+* Move `Gender` into the **Grouping Variable** box.
+
+
+4. **Define Groups:** * Click **Define Groups**.
+* Set **Group 1** to `1` and **Group 2** to `2`.
+* Click **Continue** and then **OK**.
+
+
+
+---
+
+### Quick Check of Your Data
+
+Based on the 25 youth sampled in your image:
+
+* **Total Sample Size ():** 25.
+* **Males ():** 12.
+* **Females ():** 13.
+
+When you get the results, look at the **Sig. (2-tailed)** value under "Equal variances assumed" to see if there is a significant difference between male and female usage.
+
+**Would you like me to help you interpret the final Sig. (p-value) once you run this in SPSS?**

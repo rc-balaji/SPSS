@@ -1,0 +1,49 @@
+Yes, you are absolutely right! Looking at the first page of your lab sheet, there are exactly **6 specific tasks** listed.
+
+To make sure your lab report is perfect, here is the breakdown of how to handle each of those 6 questions in SPSS using the CSV data I provided:
+
+---
+
+### 1. Display Age, Capacity & Histogram with Normal Curve
+
+* **Action:** Go to `Analyze > Descriptive Statistics > Frequencies`.
+* **Variable:** Move `Age` to the right.
+* **Charts:** Select **Histogram** and check **"Show normal curve on histogram"**.
+* **Note:** "Capacity" in this context usually refers to the sample size (), which will appear automatically in your Statistics table.
+
+### 2. Add Variable Gender (40 Male, 20 Female)
+
+* **Action:** This is already done in the CSV I gave you!
+* **Coding:** In the **Variable View** tab, make sure you set the **Values** for Gender: `1 = Male`, `2 = Female`. This tells SPSS that the numbers aren't just math, they are categories.
+
+### 3. Histogram of Age: Male
+
+* **Action:** Go to `Data > Split File`.
+* **Step:** Select **"Compare groups"** and move `Gender` into the "Groups Based on" box. Click **OK**.
+* **Step:** Now run the Histogram again (`Graphs > Legacy Dialogs > Histogram`). SPSS will now generate a specific one for Males.
+
+### 4. Histogram of Age: Female
+
+* **Action:** Since you already "Split File" in step 3, SPSS will automatically generate the Female histogram at the same time as the Male one.
+* **Important:** Once finished, go back to `Data > Split File` and select **"Analyze all cases, do not create groups"** so your next calculations aren't split.
+
+### 5. Find Mean, S.D, Median, Maximum, Minimum & Range
+
+* **Action:** Go to `Analyze > Descriptive Statistics > Descriptives`.
+* **Variable:** Move `Age` to the right.
+* **Options:** Check the boxes for **Mean, Std. deviation, Minimum, Maximum,** and **Range**. (Median is found under the `Explore` or `Frequencies` menu).
+
+### 6. Display Gender using Pie Chart with Percentage
+
+* **Action:** Go to `Analyze > Descriptive Statistics > Frequencies`.
+* **Variable:** Move `Gender` to the right.
+* **Charts:** Select **Pie Charts**.
+* **The Table:** The "Frequency Table" that appears in your output window is the "Table" requested in your prompt—it shows the count and the percentage for each gender.
+
+---
+
+### Quick Calculation Check
+
+If you've entered the data correctly, your Mean for Age should be approximately **38.58**.
+
+**Would you like me to show you how to format the final Table in Question 6 so it looks professional for your lab submission?**

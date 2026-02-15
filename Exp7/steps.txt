@@ -1,0 +1,72 @@
+To perform the **Chi-Square Test** exactly as shown in your final lab manual images, you need to structure your data for **Weighted Cases**. Since you have a contingency table with 24 individual cells (6 experience levels × 4 information sources), entering 200 individual rows would be exhausting. Instead, we use a **Frequency** column.
+
+### 1. The CSV Data (Chi-Square Test)
+
+Copy this data and save it as `chi_square_test.csv`. I have coded the variables as follows:
+
+* **Experience:** 1=Up to 5 yrs, 2=6-10, 3=11-15, 4=16-20, 5=21-25, 6=Above 25.
+* **Source:** 1=Friends/Relatives, 2=Agent, 3=Ads, 4=Exhibition.
+
+```csv
+Experience,Source,Count
+1,1,8
+1,2,4
+1,3,23
+1,4,9
+2,1,18
+2,2,4
+2,3,12
+2,4,12
+3,1,3
+3,2,3
+3,3,24
+3,4,12
+4,1,2
+4,2,3
+4,3,6
+4,4,4
+5,1,8
+5,2,3
+5,3,6
+5,4,14
+6,1,1
+6,2,1
+6,3,6
+6,4,14
+
+```
+
+---
+
+### 2. SPSS Procedure (Follow Exactly)
+
+As per your lab manual's "Step 4" and "Step 5," follow these specific instructions to handle the table data:
+
+#### Step A: Weight the Cases
+
+Because we are using a frequency table, you must tell SPSS that the `Count` column represents the number of people.
+
+1. Go to **Data** > **Weight Cases...**.
+2. Select **Weight cases by**.
+3. Move `Count` into the **Frequency Variable** box.
+4. Click **OK**.
+
+#### Step B: Run the Chi-Square Test
+
+1. Go to **Analyze** > **Descriptive Statistics** > **Crosstabs...**.
+2. Move `Experience` into the **Row(s)** box.
+3. Move `Source` into the **Column(s)** box.
+4. Click the **Statistics** button, check the **Chi-square** box, and click **Continue**.
+5. Click **OK**.
+
+---
+
+### 3. Interpreting Your Inference
+
+Your lab manual asks for your **Inference**. Look at the **Pearson Chi-Square** row in your output:
+
+* **Hypothesis ():** There is no significant association between experience and source of information.
+* **Hypothesis ():** There is a significant association between experience and source of information.
+* **The Rule:** If the **Asymp. Sig. (2-sided)** is **less than 0.05**, you reject .
+
+**Would you like me to provide the exact p-value and final inference once you have the SPSS output table?**

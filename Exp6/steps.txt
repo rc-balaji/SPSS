@@ -1,0 +1,64 @@
+To perform the **Two-Way ANOVA** in SPSS as shown in your images, you must organize the data into three columns: one for the **Workman**, one for the **Machine**, and one for the **Defects** (the count of defective pieces).
+
+### 1. The CSV Data for Two-Way ANOVA
+
+Copy this data and save it as `two_way_anova.csv`. I have followed the table from your image exactly.
+
+```csv
+Workman,Machine,Defects
+1,1,27
+1,2,34
+1,3,23
+2,1,29
+2,2,32
+2,3,25
+3,1,22
+3,2,30
+3,3,22
+
+```
+
+---
+
+### 2. SPSS Variable Setup
+
+Before running the test, set your **Variable View** in SPSS to match the "Procedure" in your lab notes:
+
+* **Variable 1:** `Workman` (Type: Numeric, Measure: Nominal).
+* **Values:** 1 = "Workman 1", 2 = "Workman 2", 3 = "Workman 3".
+
+
+* **Variable 2:** `Machine` (Type: Numeric, Measure: Nominal).
+* **Values:** 1 = "Machine 1", 2 = "Machine 2", 3 = "Machine 3".
+
+
+* **Variable 3:** `Defects` (Type: Numeric, Measure: Scale).
+
+---
+
+### 3. Step-by-Step Analysis Procedure
+
+Follow these exact steps from your lab manual to generate the results:
+
+1. Go to the **Analyze** menu.
+2. Select **General Linear Model**.
+3. Click **Univariate**.
+4. In the **Univariate** dialogue box:
+* Move `Defects` to the **Dependent Variable** box.
+* Move `Workman` and `Machine` to the **Fixed Factor(s)** box.
+
+
+5. Click **OK** to get the output.
+
+---
+
+### 4. Interpreting Your Hypothesis
+
+As per your notes, you are testing the following:
+
+* ** (Null):** There is no significant difference in defects for the different combinations of workman and machine.
+* ** (Alternative):** There is a significant difference in the defects for the different combinations.
+
+**Next Step:** Once you run the test, check the **Tests of Between-Subjects Effects** table. Look at the **Sig.** column for "Workman" and "Machine" separately. If the value is less than **0.05**, that factor has a significant impact on defects.
+
+Would you like me to help you write down the final **Result** based on the p-values you see in your SPSS output?
